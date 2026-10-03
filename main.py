@@ -1,3 +1,4 @@
+from graphs.print_graphs import print_graph
 from tables.bisection_table import print_bisection_table
 from tables.bessel_functions import *
 from methods.bisection import bisection
@@ -13,6 +14,7 @@ while True:
     print("2 - J1")
     print("3 - Y0")
     print("4 - Y1")
+    print("5 - Посмотреть графики функций")
     print("0 - Выход")
 
     choice = input("\nВаш выбор: ")
@@ -23,10 +25,13 @@ while True:
     if choice == "":
         continue
 
-    if choice not in ["1", "2", "3", "4", "0"]:
+    if choice not in ["1", "2", "3", "4", "5", "0"]:
         print("Неправильный выбор!!!")
         continue
 
+    if choice == "5":
+        print_graph()
+        continue
 
     print("\nВыберите метод:")
     print("1 - Метод деления отрезка пополам")
