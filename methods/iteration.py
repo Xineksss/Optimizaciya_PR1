@@ -1,7 +1,8 @@
+import scipy
+
 def iteration(f, lam, x0, eps):
     table = []
     count = 0
-
     while True:
         xn = x0 - lam * f(x0)
         tolerance = abs(xn - x0)

@@ -6,9 +6,7 @@ from methods.iteration import iteration
 from methods.newton import newton
 from tables.iteration_table import print_iteration_table
 
-
 while True:
-
     print("\nВыберите функцию:")
     print("1 - J0")
     print("2 - J1")
@@ -57,7 +55,7 @@ while True:
 
         if choice == "1":
             result1, table1 = bisection(j0, 1, 5, eps)
-            result2, table2 = bisection(j0, 3, 7, eps)
+            result2, table2 = bisection(j0, 5, 7, eps)
 
         elif choice == "2":
             result1, table1 = bisection(j1, 3, 5, eps)
