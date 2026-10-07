@@ -11,23 +11,23 @@ def print_graph():
 
     graph = input("\nВаш выбор: ")
 
-    x_values = np.linspace(0.01, 20, 1000)
+    x_values = np.linspace(0.1, 20, 1000)
 
     if graph == "1":
         y = j0(x_values)
-        name = "J0(x)"
+        name = "J0"
 
     elif graph == "2":
         y = j1(x_values)
-        name = "J1(x)"
+        name = "J1"
 
     elif graph == "3":
         y = y0(x_values)
-        name = "Y0(x)"
+        name = "Y0"
 
     elif graph == "4":
         y = y1(x_values)
-        name = "Y1(x)"
+        name = "Y1"
 
     else:
         print("Неправильный выбор!!!")
