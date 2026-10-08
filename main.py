@@ -33,7 +33,7 @@ while True:
 
     print("\nВыберите метод:")
     print("1 - Метод деления отрезка пополам")
-    print("2 - Метод простой итерации")
+    print("2 - Метод итераций")
     print("3 - Метод Ньютона")
     print("0 - Назад")
 
@@ -81,23 +81,23 @@ while True:
 
     elif method == "2":
 
-        print("\nМетод простой итерации\n")
+        print("\nМетод итераций\n")
 
         if choice == "1":
-            result1, table1 = iteration(j0, -1, 2, eps)
-            result2, table2 = iteration(j0, 1, 5.3, eps)
+            result1, table1 = iteration(j0, -1, 2.2, eps)
+            result2, table2 = iteration(j0, 1, 5.41, eps)
 
         elif choice == "2":
             result1, table1 = iteration(j1, -1, 3.5, eps)
             result2, table2 = iteration(j1, 1, 7, eps)
 
         elif choice == "3":
-            result1, table1 = iteration(y0, 0.5, 1, eps)
-            result2, table2 = iteration(y0, -1, 4, eps)
+            result1, table1 = iteration(y0, 0.5, 0.2, eps)
+            result2, table2 = iteration(y0, -1, 2, eps)
 
         elif choice == "4":
             result1, table1 = iteration(y1, 1, 2, eps)
-            result2, table2 = iteration(y1, -0.5, 5.5, eps)
+            result2, table2 = iteration(y1, -1, 5.2, eps)
 
         else:
             print("Неправильный выбор!!!")
@@ -120,12 +120,12 @@ while True:
             result2, table2 = newton(j1, 6, eps)
 
         elif choice == "3":
-            result1, table1 = newton(y0, 1, eps)
-            result2, table2 = newton(y0, 4, eps)
+            result1, table1 = newton(y0, 0.7, eps)
+            result2, table2 = newton(y0, 3, eps)
 
         elif choice == "4":
             result1, table1 = newton(y1, 2, eps)
-            result2, table2 = newton(y1, 5.5, eps)
+            result2, table2 = newton(y1, 5.2, eps)
 
         else:
             print("Неправильный выбор!!!")
